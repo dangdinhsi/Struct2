@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+
+    <package name="mystruct2" extends="struts-default">
+        <action name="create-student" class="com.sidang.action.StudentAction" method="create">
+            <result name="input">/student/form.jsp</result>
+        </action>
+        <action name="save-student" class="com.sidang.action.StudentAction" method="save">
+            <result name="success">/student/detail.jsp</result>
+        </action>
+    </package>
+</struts>
